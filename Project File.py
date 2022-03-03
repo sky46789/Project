@@ -125,7 +125,14 @@ def ListAllItems():
     
 
 def SaveAndSignOut():
-    print("Stock Items")
+    print("Would you like to save the changes? Y/N.")
+    if Input =="Y":
+        print("Changes saved. Signing you out.")
+        MainMenu()
+    else:
+        print("Signing out without saving")
+        MainMenu()
+   
     
 
 MainMenu()
